@@ -16851,6 +16851,12 @@ function Trig_Reward_Round_Actions takes nothing returns nothing
             call DialogSetMessageBJ(udg_reward_dialog_Copy[udg_N], "TRIGSTR_7433")
             set udg_r_temp_num=( ( 10 * udg_N ) + 1 )
             loop
+                exitwhen udg_r_temp_num > ( ( 10 * udg_N ) + 6 )
+                set udg_reward_dialog_button[udg_r_temp_num]=null
+                set udg_r_temp_num=udg_r_temp_num + 1
+            endloop
+            set udg_r_temp_num=( ( 10 * udg_N ) + 1 )
+            loop
                 exitwhen udg_r_temp_num > ( ( 10 * udg_N ) + 5 )
                 if ( Trig_Reward_Round_Func003Func001Func005Func001C() ) then
                     set udg_reward_trigger[udg_r_temp_num]=udg_reward_trigger_list[1]
@@ -16906,12 +16912,20 @@ function Trig_Reward_Chosen_Func002Func002C takes nothing returns boolean
 endfunction
 
 function Trig_Reward_Chosen_Actions takes nothing returns nothing
+ local integer endslot= ( ( 10 * GetConvertedPlayerId(GetTriggerPlayer()) ) + 6 )
+ local boolean found= false
     set udg_ChoosePlayers=( udg_ChoosePlayers - 1 )
     set udg_r_temp_num=( ( 10 * GetConvertedPlayerId(GetTriggerPlayer()) ) + 1 )
     loop
-        exitwhen udg_r_temp_num > ( ( 10 * GetConvertedPlayerId(GetTriggerPlayer()) ) + 6 )
+        exitwhen udg_r_temp_num > endslot
         set udg_reward_learn_option_taken[udg_r_temp_num]=0
+        set udg_r_temp_num=udg_r_temp_num + 1
+    endloop
+    set udg_r_temp_num=( ( 10 * GetConvertedPlayerId(GetTriggerPlayer()) ) + 1 )
+    loop
+        exitwhen found or udg_r_temp_num > endslot
         if ( Trig_Reward_Chosen_Func002Func002C() ) then
+            set found=true
             set udg_reward_chosenbutton_num=udg_r_temp_num
             call ConditionalTriggerExecute(udg_reward_trigger[udg_r_temp_num])
         else
@@ -17097,6 +17111,12 @@ function Trig_RewardReroll_Actions takes nothing returns nothing
             call TriggerSleepAction(0.00)
             call DialogClearBJ(udg_reward_dialog_Copy[udg_N])
             call DialogSetMessageBJ(udg_reward_dialog_Copy[udg_N], "TRIGSTR_3502")
+            set udg_r_temp_num=( ( 10 * udg_N ) + 1 )
+            loop
+                exitwhen udg_r_temp_num > ( ( 10 * udg_N ) + 6 )
+                set udg_reward_dialog_button[udg_r_temp_num]=null
+                set udg_r_temp_num=udg_r_temp_num + 1
+            endloop
             set udg_r_temp_num=( ( 10 * udg_N ) + 1 )
             loop
                 exitwhen udg_r_temp_num > ( ( 10 * udg_N ) + 5 )
