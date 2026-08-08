@@ -50,27 +50,61 @@ INT, REAL, UNREAL, STRING = 0, 1, 2, 3
 class Mod:
     """One changed field of one object."""
 
-    def __init__(self, id, type, level, ptr, value, offset):
+    def __init__(self, id, type, level, ptr, value, offset, end):
         self.id = id
         self.type = type
         self.level = level
         self.ptr = ptr
         self.value = value
         self.offset = offset  # where the value sits in the file, for patching
+        # The 4 bytes trailing every modification. The format calls this the
+        # object's id repeated, but maps in the wild write zeroes instead, so
+        # keep whatever was there rather than regenerating it.
+        self.end = end
 
     def __repr__(self):
         lvl = ' lvl=%d' % self.level if self.level else ''
         return '<%s%s = %r>' % (self.id, lvl, self.value)
 
 
+class Set:
+    """One block of modifications, with the object ids it applies to."""
+
+    def __init__(self, ids, mods):
+        self.ids = ids
+        self.mods = mods
+
+
 class Obj:
     """One object: a base id, a custom id, and the fields that were changed."""
 
-    def __init__(self, table, base, custom, mods):
+    def __init__(self, table, base, custom, sets):
         self.table = table  # 0 = modified stock object, 1 = custom object
         self.base = base
         self.custom = custom
-        self.mods = mods
+        self.sets = sets
+
+    @property
+    def mods(self):
+        return [m for s in self.sets for m in s.mods]
+
+    def add(self, field, level, value, like=None):
+        """Add a field this object doesn't set yet.
+
+        `like` is an existing Mod to copy the value type, data pointer and
+        trailing bytes from - usually the same field at another level, which
+        is the only reliable way to get those right.
+        """
+        if self.get(field, level):
+            raise ValueError('%s already sets %s at level %d'
+                             % (self.custom, field, level))
+        template = like or (self.get(field) or [None])[0]
+        if template is None:
+            raise ValueError('no template for %s; pass like=' % field)
+        mod = Mod(field, template.type, level, template.ptr, value, None,
+                  template.end)
+        self.sets[0].mods.append(mod)
+        return mod
 
     def get(self, field, level=None):
         """Every modification of `field`, optionally at one level."""
@@ -91,11 +125,12 @@ class Obj:
 class ObjectData:
     """A parsed object-data file, still holding its original bytes."""
 
-    def __init__(self, path, version, objects, data):
+    def __init__(self, path, version, objects, data, leveled):
         self.path = path
         self.version = version
         self.objects = objects
         self.data = bytearray(data)
+        self.leveled = leveled
 
     def find(self, base=None, custom=None, field=None, string=None):
         """Objects matching every filter given.
@@ -128,11 +163,54 @@ class ObjectData:
         mod.value = value
         return old
 
-    def save(self, path=None):
-        """Write the patched bytes back. Length never changes."""
+    def serialize(self):
+        """Rebuild the whole file from the parsed objects.
+
+        Only needed when fields were added, since that changes the length.
+        Reserialising an untouched file reproduces it byte for byte - assert
+        that (see round_trips()) before trusting the output of a real edit.
+        """
+        out = bytearray(struct.pack('<I', self.version))
+        for table in (0, 1):
+            objs = [o for o in self.objects if o.table == table]
+            out += struct.pack('<I', len(objs))
+            for o in objs:
+                out += o.base.encode('latin-1') + o.custom.encode('latin-1')
+                if self.version >= 3:
+                    out += struct.pack('<I', len(o.sets))
+                for s in o.sets:
+                    if self.version >= 3:
+                        out += struct.pack('<I', len(s.ids))
+                        for id in s.ids:
+                            out += id.encode('latin-1')
+                    out += struct.pack('<I', len(s.mods))
+                    for m in s.mods:
+                        out += m.id.encode('latin-1') + struct.pack('<I', m.type)
+                        if self.leveled:
+                            out += struct.pack('<ii', m.level, m.ptr)
+                        if m.type == INT:
+                            out += struct.pack('<i', int(m.value))
+                        elif m.type == STRING:
+                            out += m.value.encode('latin-1') + b'\0'
+                        else:
+                            out += struct.pack('<f', float(m.value))
+                        out += m.end.encode('latin-1')
+        return bytes(out)
+
+    def round_trips(self):
+        """True if reserialising reproduces the file exactly as it was read."""
+        return self.serialize() == bytes(self.data)
+
+    def save(self, path=None, rebuild=False):
+        """Write the file back.
+
+        By default this writes the patched original bytes, so a numeric edit
+        touches only the bytes it changed. `rebuild` reserialises instead,
+        which is what added fields require.
+        """
         out = path or self.path
         with open(out, 'wb') as fh:
-            fh.write(bytes(self.data))
+            fh.write(self.serialize() if rebuild else bytes(self.data))
         return out
 
 
@@ -167,11 +245,12 @@ def parse(path, leveled=None):
     for table in range(2):
         for _ in range(num('<I', 4)):
             base, custom = id4(), id4()
-            mods = []
+            sets = []
             for _ in range(num('<I', 4) if version >= 3 else 1):
+                ids, mods = [], []
                 if version >= 3:
                     for _ in range(num('<I', 4)):  # ids this set applies to
-                        id4()
+                        ids.append(id4())
                 for _ in range(num('<I', 4)):
                     field, vtype = id4(), num('<I', 4)
                     level = num('<i', 4) if leveled else 0
@@ -186,12 +265,13 @@ def parse(path, leveled=None):
                     else:
                         raise ValueError('bad value type %d at byte %d - wrong '
                                          '`leveled` for this file?' % (vtype, pos))
-                    id4()  # end marker
-                    mods.append(Mod(field, vtype, level, ptr, value, offset))
-            objects.append(Obj(table, base, custom, mods))
+                    mods.append(Mod(field, vtype, level, ptr, value, offset,
+                                    id4()))
+                sets.append(Set(ids, mods))
+            objects.append(Obj(table, base, custom, sets))
 
     assert pos == len(data), 'parsed %d of %d bytes' % (pos, len(data))
-    return ObjectData(path, version, objects, data)
+    return ObjectData(path, version, objects, data, leveled)
 
 
 def _main(argv):

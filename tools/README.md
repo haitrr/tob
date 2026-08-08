@@ -62,8 +62,36 @@ python3 tools/w3obj.py slash1.26/war3map.w3a --base ANsq --field ahdu --set 180
 ```
 
 `--set` needs `--field` plus at least one of `--base` / `--id` / `--string`, so
-a typo can't rewrite the whole file. Strings can't be patched this way — they'd
-change length — so edit the `.wts` entry, which is where the readable text is:
+a typo can't rewrite the whole file.
+
+Adding a field an object doesn't set yet — a level the author never filled in,
+say — changes the file's length, so it needs the serialiser rather than an
+in-place patch:
+
+```python
+import sys; sys.path.insert(0, 'tools')
+import w3obj
+
+od = w3obj.parse('slash1.26/war3map.w3a')
+assert od.round_trips()          # serialiser reproduces this file exactly
+for o in od.find(base='Arai'):
+    for m in o.get('adur'):
+        od.set_value(m, 120.0)   # levels the object already sets
+    for level in (1, 2):
+        o.add('adur', level, 120.0)   # levels it didn't
+od.save(rebuild=True)
+```
+
+`round_trips()` is the guard worth keeping: it reserialises the untouched file
+and compares it to the bytes on disk, so a format detail we got wrong shows up
+before an edit is written rather than as a map that won't load. `add()` copies
+the value type, data pointer and trailing bytes from the same field at another
+level — the trailing 4 bytes of a modification are documented as the object's
+id repeated, but this map writes zeroes there, so they're preserved rather
+than regenerated.
+
+Strings can't be patched in place — they'd change length — so edit the `.wts`
+entry, which is where the readable text is:
 
 ```python
 import sys; sys.path.insert(0, 'tools')
@@ -116,8 +144,8 @@ on it. Nothing in `war3map.j` overrides it for these summons.
 ## Limits
 
 - Reads files already extracted from the MPQ archive; it won't open a `.w3x`.
-- In-place numeric edits only, by design. Adding or removing objects or fields
-  needs a full serialiser, which this deliberately isn't.
+- Adds and edits fields, but not whole objects. A new ability or unit still
+  belongs in the World Editor.
 - Field ids (`adur`, `Hwe1`, `amcs`) are World Editor internals; there's no
   table of them here. Look them up, or find them by dumping an object you
   already understand and matching values against the editor.
