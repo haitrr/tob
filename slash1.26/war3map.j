@@ -13256,6 +13256,7 @@ function Trig_Creeps_Enter_Map_Actions takes nothing returns nothing
     call UnitRemoveTypeBJ(UNIT_TYPE_FLYING, GetEnteringUnit())
     call UnitRemoveTypeBJ(UNIT_TYPE_ANCIENT, GetEnteringUnit())
     call UnitAddTypeBJ(UNIT_TYPE_GROUND, GetEnteringUnit())
+    call BlzSetUnitBooleanField(GetEnteringUnit(), UNIT_BF_RAISABLE, true)
     call UnitRemoveAbilityBJ('ACmi', GetEnteringUnit())
     call UnitRemoveAbilityBJ('Amim', GetEnteringUnit())
     call BlzSetUnitIntegerFieldBJ(GetTriggerUnit(), UNIT_IF_GOLD_BOUNTY_AWARDED_NUMBER_OF_DICE, 0)
