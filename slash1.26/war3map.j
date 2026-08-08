@@ -11642,7 +11642,7 @@ function Trig_start_Actions takes nothing returns nothing
     set udg_Draft_hero_building[1]=gg_unit_n02S_0002
     set udg_X=0
     set bj_forLoopAIndex=1
-    set bj_forLoopAIndexEnd=2
+    set bj_forLoopAIndexEnd=4
     loop
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
         call ForGroupBJ(GetRandomSubGroup(1, GetUnitsInRectMatching(GetPlayableMapRect(), Condition(function Trig_start_Func051Func001001002002))), function Trig_start_Func051Func001A)
@@ -11783,7 +11783,7 @@ function Trig_endpick_Actions takes nothing returns nothing
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
         if ( Trig_endpick_Func001Func001C() ) then
             set bj_forLoopBIndex=1
-            set bj_forLoopBIndexEnd=8
+            set bj_forLoopBIndexEnd=16
             loop
                 exitwhen bj_forLoopBIndex > bj_forLoopBIndexEnd
                 if ( Trig_endpick_Func001Func001Func001Func001C() ) then
@@ -11867,7 +11867,7 @@ function Trig_afterpick_Actions takes nothing returns nothing
     call PauseTimerBJ(true, udg_picktimer)
     call DestroyTimerDialogBJ(GetLastCreatedTimerDialogBJ())
     set bj_forLoopAIndex=1
-    set bj_forLoopAIndexEnd=8
+    set bj_forLoopAIndexEnd=16
     loop
         exitwhen bj_forLoopAIndex > bj_forLoopAIndexEnd
         call RemoveUnitFromStockBJ(udg_ut[GetForLoopIndexA()], udg_Draft_hero_building[1])
