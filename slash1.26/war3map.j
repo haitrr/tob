@@ -17068,6 +17068,7 @@ function Trig_RewardReroll_Func003C takes nothing returns boolean
 endfunction
 
 function Trig_RewardReroll_Actions takes nothing returns nothing
+ local integer L_N
     if ( Trig_RewardReroll_Func001C() ) then
         set udg_reward_dialog=udg_reward_dialog_Copy[1]
         set udg_X=1
@@ -17097,6 +17098,7 @@ function Trig_RewardReroll_Actions takes nothing returns nothing
         // Click Button
         // Send Reroll for plX
         set udg_N=udg_X
+        set L_N=udg_X
         call AdjustPlayerStateBJ(- 1, ConvertedPlayer(udg_X), PLAYER_STATE_RESOURCE_LUMBER)
         set udg_reward_chosenbutton_num=0
         call DisplayTimedTextToForce(GetPlayersAll(), 10.00, ( udg_Pcolorname[udg_X] + "rerolled" ))
@@ -17109,6 +17111,9 @@ function Trig_RewardReroll_Actions takes nothing returns nothing
                 set bj_forLoopBIndex=bj_forLoopBIndex + 1
             endloop
             call TriggerSleepAction(0.00)
+            set udg_N=L_N
+            set udg_X=L_N
+            set udg_reward_chosenbutton_num=0
             call DialogClearBJ(udg_reward_dialog_Copy[udg_N])
             call DialogSetMessageBJ(udg_reward_dialog_Copy[udg_N], "TRIGSTR_3502")
             set udg_r_temp_num=( ( 10 * udg_N ) + 1 )
