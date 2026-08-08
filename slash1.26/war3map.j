@@ -3596,6 +3596,8 @@ function Trig_SLASHOnKill_Func004C takes nothing returns boolean
 endfunction
 
 function Trig_SLASHOnKill_Actions takes nothing returns nothing
+function Trig_SLASHOnKill_Actions takes nothing returns nothing
+ local unit L_killerHero
     if ( Trig_SLASHOnKill_Func001C() ) then
         set udg_chance=GetRandomInt(1, 100)
         if ( Trig_SLASHOnKill_Func001Func002C() ) then
@@ -3618,16 +3620,17 @@ function Trig_SLASHOnKill_Actions takes nothing returns nothing
         endif
     else
     endif
+    set L_killerHero=udg_NICKHeroArray[GetConvertedPlayerId(GetOwningPlayer(GetKillingUnitBJ()))]
     if ( Trig_SLASHOnKill_Func003C() ) then
-        call ModifyHeroStat(bj_HEROSTAT_INT, GetKillingUnitBJ(), bj_MODIFYMETHOD_SET, ( GetHeroStatBJ(bj_HEROSTAT_INT, GetKillingUnitBJ(), false) + 5 ))
+        call ModifyHeroStat(bj_HEROSTAT_INT, L_killerHero, bj_MODIFYMETHOD_SET, ( GetHeroStatBJ(bj_HEROSTAT_INT, L_killerHero, false) + 5 ))
         set udg_SHeroBoneCollectorInt=( udg_SHeroBoneCollectorInt + 1 )
     else
     endif
     if ( Trig_SLASHOnKill_Func004C() ) then
         if ( Trig_SLASHOnKill_Func004Func001C() ) then
-            call ModifyHeroStat(bj_HEROSTAT_INT, GetKillingUnitBJ(), bj_MODIFYMETHOD_SET, ( GetHeroStatBJ(bj_HEROSTAT_INT, GetKillingUnitBJ(), false) + 1 ))
+            call ModifyHeroStat(bj_HEROSTAT_INT, L_killerHero, bj_MODIFYMETHOD_SET, ( GetHeroStatBJ(bj_HEROSTAT_INT, L_killerHero, false) + 1 ))
             set udg_SHeroRylaiInt=( udg_SHeroRylaiInt + 1 )
-            call CreateTextTagUnitBJ("TRIGSTR_11643", GetKillingUnitBJ(), 0, 8.00, 0.00, 0.00, 100.00, 0)
+            call CreateTextTagUnitBJ("TRIGSTR_11643", L_killerHero, 0, 8.00, 0.00, 0.00, 100.00, 0)
             call SetTextTagVelocityBJ(GetLastCreatedTextTag(), 64, GetRandomDirectionDeg())
             call SetTextTagPermanentBJ(GetLastCreatedTextTag(), false)
             call SetTextTagLifespanBJ(GetLastCreatedTextTag(), 1.33)
