@@ -3596,7 +3596,6 @@ function Trig_SLASHOnKill_Func004C takes nothing returns boolean
 endfunction
 
 function Trig_SLASHOnKill_Actions takes nothing returns nothing
-function Trig_SLASHOnKill_Actions takes nothing returns nothing
  local unit L_killerHero
     if ( Trig_SLASHOnKill_Func001C() ) then
         set udg_chance=GetRandomInt(1, 100)
@@ -3639,6 +3638,7 @@ function Trig_SLASHOnKill_Actions takes nothing returns nothing
         endif
     else
     endif
+    set L_killerHero=null
 endfunction
 
 //===========================================================================
