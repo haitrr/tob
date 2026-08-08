@@ -6815,61 +6815,61 @@ Healing Wave - [|cffffcc00Level 8|r]
 STRING 1145
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DY,Dur1> seconds.
 }
 
 STRING 1146
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DY,Dur2> seconds.
 }
 
 STRING 1147
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DY,Dur2> seconds.
 }
 
 STRING 1148
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DY,Dur3> seconds.
 }
 
 STRING 1149
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DY,Dur3> seconds.
 }
 
 STRING 1150
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DY,Dur1> seconds.
 }
 
 STRING 1151
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DY,Dur1> seconds.
 }
 
 STRING 1152
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DY,Dur2> seconds.
 }
 
 STRING 1153
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DY,Dur3> seconds.
 }
 
 STRING 1154
 // Abilities: A0DY (Summon Quilbeast Q), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DY,Dur3> seconds.
 }
 
 STRING 1155
@@ -13979,7 +13979,7 @@ Activate Mana Shield - [|cffffcc00Level 10|r]
 STRING 2345
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DZ,Dur1> seconds.
 }
 
 STRING 2346
@@ -13997,7 +13997,7 @@ STRING 2347
 STRING 2348
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DZ,Dur2> seconds.
 }
 
 STRING 2349
@@ -14033,13 +14033,13 @@ Causes the ground to erupt into a massive Volcano. Every 3 seconds, a wave of mo
 STRING 2354
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DZ,Dur2> seconds.
 }
 
 STRING 2355
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DZ,Dur3> seconds.
 }
 
 STRING 2356
@@ -14069,25 +14069,25 @@ Command Aura - [|cffffcc00Level 2|r]
 STRING 2360
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DZ,Dur3> seconds.
 }
 
 STRING 2361
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DZ,Dur1> seconds.
 }
 
 STRING 2362
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0DZ,Dur1> seconds.
 }
 
 STRING 2363
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0DZ,Dur2> seconds.
 }
 
 STRING 2364
@@ -14111,7 +14111,7 @@ An impenetrable shield surrounds the Paladin, protecting him from all damage and
 STRING 2367
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DZ,Dur3> seconds.
 }
 
 STRING 2368
@@ -14123,7 +14123,7 @@ STRING 2368
 STRING 2369
 // Abilities: A0DZ (Summon Quilbeast W), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0DZ,Dur3> seconds.
 }
 
 STRING 2370
@@ -14213,7 +14213,7 @@ Allows you to choose from a new set of items.
 STRING 2384
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E0,Dur1> seconds.
 }
 
 STRING 2385
@@ -14471,7 +14471,7 @@ Reduces a target enemy unit's armor by 11 and gives vision of that unit. |nLasts
 STRING 2427
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E0,Dur2> seconds.
 }
 
 STRING 2428
@@ -14483,19 +14483,19 @@ Consumes a nearby corpse to heal <A0G5,DataA7> hit points per second for 5 secon
 STRING 2429
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E0,Dur2> seconds.
 }
 
 STRING 2430
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E0,Dur3> seconds.
 }
 
 STRING 2431
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E0,Dur3> seconds.
 }
 
 STRING 2432
@@ -14854,19 +14854,19 @@ STRING 2490
 STRING 2491
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E0,Dur1> seconds.
 }
 
 STRING 2492
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E0,Dur1> seconds.
 }
 
 STRING 2493
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E0,Dur2> seconds.
 }
 
 STRING 2494
@@ -14878,7 +14878,7 @@ STRING 2494
 STRING 2495
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E0,Dur3> seconds.
 }
 
 STRING 2496
@@ -15159,7 +15159,7 @@ STRING 2541
 STRING 2542
 // Abilities: A0E0 (Summon Quilbeast E), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E0,Dur3> seconds.
 }
 
 STRING 2543
@@ -15315,61 +15315,61 @@ STRING 2567
 STRING 2568
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E1,Dur1> seconds.
 }
 
 STRING 2569
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E1,Dur2> seconds.
 }
 
 STRING 2570
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E1,Dur2> seconds.
 }
 
 STRING 2571
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E1,Dur3> seconds.
 }
 
 STRING 2572
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E1,Dur3> seconds.
 }
 
 STRING 2573
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E1,Dur1> seconds.
 }
 
 STRING 2574
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E1,Dur1> seconds.
 }
 
 STRING 2575
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E1,Dur2> seconds.
 }
 
 STRING 2576
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E1,Dur3> seconds.
 }
 
 STRING 2577
 // Abilities: A0E1 (Summon Quilbeast R), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E1,Dur3> seconds.
 }
 
 STRING 2578
@@ -15459,25 +15459,25 @@ Carrion Swarm - [|cffffcc00Level 5|r]
 STRING 2592
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E2,Dur1> seconds.
 }
 
 STRING 2593
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E2,Dur2> seconds.
 }
 
 STRING 2594
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E2,Dur2> seconds.
 }
 
 STRING 2595
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E2,Dur3> seconds.
 }
 
 STRING 2596
@@ -15543,7 +15543,7 @@ Skip Ultimate
 STRING 2606
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E2,Dur3> seconds.
 }
 
 STRING 2607
@@ -15603,13 +15603,13 @@ Revive Garithos
 STRING 2616
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E2,Dur1> seconds.
 }
 
 STRING 2617
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E2,Dur1> seconds.
 }
 
 STRING 2618
@@ -15651,7 +15651,7 @@ STRING 2623
 STRING 2624
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E2,Dur2> seconds.
 }
 
 STRING 2625
@@ -15728,7 +15728,7 @@ Teleports <A036,DataA3> distance.
 STRING 2637
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E2,Dur3> seconds.
 }
 
 STRING 2638
@@ -15806,7 +15806,7 @@ Removes all buffs from units in an area of <A0H7,Area9>. |n|cffffcc00Deals <A0H7
 STRING 2650
 // Abilities: A0E2 (Summon Quilbeast D), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E2,Dur3> seconds.
 }
 
 STRING 2651
@@ -16087,13 +16087,13 @@ Blood Elf Lieutenant
 STRING 2697
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E3,Dur1> seconds.
 }
 
 STRING 2698
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E3,Dur2> seconds.
 }
 
 STRING 2699
@@ -16129,19 +16129,19 @@ Carl
 STRING 2704
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E3,Dur2> seconds.
 }
 
 STRING 2705
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E3,Dur3> seconds.
 }
 
 STRING 2706
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E3,Dur3> seconds.
 }
 
 STRING 2707
@@ -16219,7 +16219,7 @@ STRING 2718
 STRING 2719
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E3,Dur1> seconds.
 }
 
 STRING 2720
@@ -16237,25 +16237,25 @@ Carrion Swarm - [|cffffcc00Level 7|r]
 STRING 2722
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E3,Dur1> seconds.
 }
 
 STRING 2723
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E3,Dur2> seconds.
 }
 
 STRING 2724
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E3,Dur3> seconds.
 }
 
 STRING 2725
 // Abilities: A0E3 (Summon Quilbeast F), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E3,Dur3> seconds.
 }
 
 STRING 2726
@@ -17178,7 +17178,7 @@ Bloodlust - [|cffffcc00Level 6|r]
 STRING 2879
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 1 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E4,Dur1> seconds.
 }
 
 STRING 2880
@@ -17550,7 +17550,7 @@ Revive Bone Collector
 STRING 2941
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 2 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E4,Dur2> seconds.
 }
 
 STRING 2942
@@ -17562,7 +17562,7 @@ Bloodlust - [|cffffcc00Level 8|r]
 STRING 2943
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 3 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E4,Dur2> seconds.
 }
 
 STRING 2944
@@ -17592,43 +17592,43 @@ Smoke Bomb - [|cffffcc00Level 9|r]
 STRING 2948
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 3 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E4,Dur3> seconds.
 }
 
 STRING 2949
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 4 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E4,Dur3> seconds.
 }
 
 STRING 2950
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 2 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E4,Dur1> seconds.
 }
 
 STRING 2951
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.
+Summons 3 angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <A0E4,Dur1> seconds.
 }
 
 STRING 2952
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.
+Summons 1 angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <A0E4,Dur2> seconds.
 }
 
 STRING 2953
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 2 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E4,Dur3> seconds.
 }
 
 STRING 2954
 // Abilities: A0E4 (Summon Quilbeast G), Ubertip (Tooltip - Normal - Extended)
 {
-Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.
+Summons 1 angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <A0E4,Dur3> seconds.
 }
 
 STRING 2955
