@@ -82,6 +82,9 @@ for o in od.find(base='Arai'):
 od.save(rebuild=True)
 ```
 
+`remove(field, level)` is the counterpart, dropping a field so the object
+falls back to whatever its base sets — useful for undoing an `add()`.
+
 `round_trips()` is the guard worth keeping: it reserialises the untouched file
 and compares it to the bytes on disk, so a format detail we got wrong shows up
 before an edit is written rather than as a map that won't load. `add()` copies

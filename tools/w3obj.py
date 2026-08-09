@@ -106,6 +106,19 @@ class Obj:
         self.sets[0].mods.append(mod)
         return mod
 
+    def remove(self, field, level=None):
+        """Drop a field this object sets, so it falls back to the base object.
+
+        Needs save(rebuild=True), like add(). Returns how many were dropped.
+        """
+        gone = 0
+        for s in self.sets:
+            keep = [m for m in s.mods
+                    if not (m.id == field and (level is None or m.level == level))]
+            gone += len(s.mods) - len(keep)
+            s.mods[:] = keep
+        return gone
+
     def get(self, field, level=None):
         """Every modification of `field`, optionally at one level."""
         return [m for m in self.mods
