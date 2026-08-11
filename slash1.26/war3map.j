@@ -11109,7 +11109,7 @@ function Trig_perm_immo_ability_effect_Actions takes nothing returns nothing
             loop
                 exitwhen bj_forLoopBIndex > bj_forLoopBIndexEnd
                 if ( Trig_perm_immo_ability_effect_Func002Func001Func003Func001C() ) then
-                    call UnitDamagePointLoc(udg_NICKHeroArray[GetForLoopIndexA()], 0.01, 1500.00, GetUnitLoc(udg_NICKHeroArray[GetForLoopIndexA()]), ( I2R(( GetUnitAbilityLevelSwapped(udg_Hotkey_Abilities[GetForLoopIndexB()], udg_NICKHeroArray[GetForLoopIndexA()]) * 6 )) + 4.00 ), ATTACK_TYPE_NORMAL, DAMAGE_TYPE_FIRE)
+                    call UnitDamagePointLoc(udg_NICKHeroArray[GetForLoopIndexA()], 0.01, 6000.00, GetUnitLoc(udg_NICKHeroArray[GetForLoopIndexA()]), ( I2R(( GetUnitAbilityLevelSwapped(udg_Hotkey_Abilities[GetForLoopIndexB()], udg_NICKHeroArray[GetForLoopIndexA()]) * 6 )) + 4.00 ), ATTACK_TYPE_NORMAL, DAMAGE_TYPE_FIRE)
                 else
                 endif
                 set bj_forLoopBIndex=bj_forLoopBIndex + 1
